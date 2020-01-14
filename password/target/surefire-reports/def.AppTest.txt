@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: def.AppTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.627 s <<< FAILURE! - in def.AppTest
-testUnlockIncome(def.AppTest)  Time elapsed: 0.046 s  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.655 s <<< FAILURE! - in def.AppTest
+testUnlockIncome(def.AppTest)  Time elapsed: 0.007 s  <<< ERROR!
 java.lang.Error: 
 Unresolved compilation problems: 
 	The method GeneratePassword(String) is undefined for the type User
