@@ -6,8 +6,8 @@ public class Start{
         User u1 = new User("Muller", 60000);
         User u2 = new User("Fritz", 75000);
         
-        u1.GeneratePassword("abcd1234");
-        u2.GeneratePassword("4321dcba");
+        u1.generatePassword("abcd1234");
+        u2.generatePassword("4321dcba");
     
 
     

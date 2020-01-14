@@ -26,7 +26,7 @@ public class User {
 	}
 
 	public void generatePassword(String password) {
-		if (IsValidPassword(password)) {
+		if (isValidPassword(password)) {
 			try {
 				this.storePassword(Password.getSaltedHash(password));
 			} catch (Exception e) {
@@ -54,7 +54,7 @@ public class User {
 	}
 
 	// Password check
-	public boolean IsValidPassword(String password) {
+	public boolean isValidPassword(String password) {
 		int upperCount = 0; 	//How many uppercase letters are in the password?
 		int lowerCount = 0;		//How many lowercase letters are in the password?
 		int numCount = 0;		//How many digits are in the password?
