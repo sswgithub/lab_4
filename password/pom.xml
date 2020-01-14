@@ -16,7 +16,7 @@
   <sonar.projectKey>sswgithub_lab_4</sonar.projectKey>
   <sonar.organization>sswgithub</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-  <sonar.login>df02909670526779d38dfab0045de72f3fbaa17a</sonar.login>
+  <sonar.login>3c64ca71648b4398eb38c26ee9fc5ad5189c0e07</sonar.login>
 </properties>
   
   <dependencies>
