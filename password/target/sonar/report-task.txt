@@ -1,0 +1,7 @@
+organization=sswgithub
+projectKey=sswgithub_lab_4
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.4039
+dashboardUrl=https://sonarcloud.io/dashboard?id=sswgithub_lab_4
+ceTaskId=AW-lNAYHEDdXz5iuZOtL
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AW-lNAYHEDdXz5iuZOtL
