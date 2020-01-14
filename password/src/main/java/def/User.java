@@ -1,16 +1,19 @@
 package def;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class User {
 
 	private String username;
-	private String hashed_password;
+	private String hashedPassword;
 	private int income;
 	private int minPasswordLength = 10;
 	private int minLowerCase = 1;
 	private int minUpperCase = 1;
 	private int minNumbers = 1;
 	private int minSpecial = 1;
-
+	private static final Logger log = Logger.getLogger( User.class.getName() );
 	User() {
 	}
 
@@ -19,34 +22,32 @@ public class User {
 		this.income = income;
 	}
 
-	private void store_password(String password_hash) {
-		this.hashed_password = password_hash;
+	private void StorePassword(String passwordHash) {
+		this.hashedPassword = passwordHash;
 	}
 
-	public void generate_password(String password) {
-		if (isValidPassword(password)) {
+	public void GeneratePassword(String password) {
+		if (IsValidPassword(password)) {
 			try {
-				this.store_password(Password.getSaltedHash(password));
+				this.StorePassword(Password.getSaltedHash(password));
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				log.info("there was an exception");
 			}
 		} else {
 			System.out.println("Password does not match criteria");
 		}
 	}
 
-	int unlock_income(String username, String cleartext_password) {
+	int UnlockIncome(String username, String cleartextPassword) {
 		try {
-			if (Password.check(cleartext_password, this.hashed_password)) {
+			if (Password.check(cleartextPassword, this.hashedPassword)) {
 				return this.income;
 			} else {
 				System.out.println("Passwort does not match stored hash for user");
 
 			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.severe("there was an exception");
 
 		}
 		return 0;
@@ -54,12 +55,12 @@ public class User {
 	}
 
 	// Password check
-	public boolean isValidPassword(String password) {
+	public boolean IsValidPassword(String password) {
 		int upperCount = 0; 	//How many uppercase letters are in the password?
 		int lowerCount = 0;		//How many lowercase letters are in the password?
 		int numCount = 0;		//How many digits are in the password?
 		int specialCount = 0;	//How many special characters are in the password?
-		if (password.length() >= minPasswordLength) {
+		if (password.length() >= minPasswordLength) { //check password length
 			for (int i = 0; i < password.length(); i++) {
 				char c = password.charAt(i);
 				if (Character.isUpperCase(c)) { //check for uppercase

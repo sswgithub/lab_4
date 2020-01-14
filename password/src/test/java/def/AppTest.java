@@ -37,20 +37,20 @@ public class AppTest {
 	@Test
 	public void testUnlockIncome() {
 		User test = new User("Maier", 500);
-		test.generate_password("ValidPassword1!");
-		assertTrue(test.unlock_income("Maier", "ValidPassword1!") == 500);
-		assertTrue(test.unlock_income("Muller", "wrongPassword") == 0);
+		test.GeneratePassword("ValidPassword1!");
+		assertTrue(test.UnlockIncome("Maier", "ValidPassword1!") == 500);
+		assertTrue(test.UnlockIncome("Muller", "wrongPassword") == 0);
 	}
 
 	@Test
 	public void testPassword() {
 		User test = new User("Maier", 500);
-		assertTrue(test.isValidPassword("ValidPassword1!"));
-		assertFalse(test.isValidPassword("nouppercase1!"));
-		assertFalse(test.isValidPassword("NOLOWERCASE1!"));
-		assertFalse(test.isValidPassword("toShort1!"));
-		assertFalse(test.isValidPassword("NoNumber!!!"));
-		assertFalse(test.isValidPassword("NoSpecialCharacter1"));
+		assertTrue(test.IsValidPassword("ValidPassword1!"));
+		assertFalse(test.IsValidPassword("nouppercase1!"));
+		assertFalse(test.IsValidPassword("NOLOWERCASE1!"));
+		assertFalse(test.IsValidPassword("toShort1!"));
+		assertFalse(test.IsValidPassword("NoNumber!!!"));
+		assertFalse(test.IsValidPassword("NoSpecialCharacter1"));
 	}
 
 }

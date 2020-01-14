@@ -7,6 +7,10 @@ import java.security.SecureRandom;
 import org.apache.commons.codec.binary.Base64;
 
 public class Password {
+	
+	  private Password() {
+		    throw new IllegalStateException("Utility class");
+		  }
 	// The higher the number of iterations the more
 	// expensive computing the hash is for us and
 	// also for an attacker.
