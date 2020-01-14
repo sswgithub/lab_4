@@ -1,74 +1,52 @@
 
--def.User#isValidPassword(Ljava/lang/String;)ZH
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.java9 9("20*ë
-13H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaG G(”
-‘
+*def.User#unlockIncome(Ljava/lang/String;)IH
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java( (("6*Ð
+3H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java- -(z
+x
 H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaG G(
-%5boolean"java.lang.Character#isDigit(C)Z*"
-	!Unknown!*
-""*
-18*¡
-2H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaQ
- Q("R
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java- -(
+%2java.util.logging.Logger"__id*
+""ÿü
 H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaQ Q(
-""*ï
-15H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaD D(˜
-•
-H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaD D( 
-%4boolean"#java.lang.Character#isLowerCase(C)Z*"
-	!Unknown!*
-""*
-13*›
-17H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.java@ @(©¦
-H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.java@ @(
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java- -(>
 
-%2char"java.lang.String#charAt(I)C*
-
-passwordjava.lang.String*
-""2	charAt(I)˜
-•
-H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaA A( 
-%3boolean"#java.lang.Character#isUpperCase(C)Z*"
-	!Unknown!*
-""*
-15*û
-18H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.java? ?(ž›
-H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.java? ?((	
-%1int"java.lang.String#length()I*
-
-passwordjava.lang.String2length()*
-
-2
-17
-1*û
-20H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.java: :(ž›
-H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.java> >(	
-%0int"java.lang.String#length()I*
-
-passwordjava.lang.String2length()*
-
-2
-18
+%3void"4java.util.logging.Logger#severe(Ljava/lang/String;)V* 
+
+%2java.util.logging.Logger*0.
+,Passwort does not match stored hash for user2severe(Ljava/lang/String;)*
 1*¡
-1H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaS
- S("R
+4H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java+ +("R
 H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaS S(
-"":
-passwordjava.lang.StringB
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java+ +(
+""*Ñ
+6H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java* *(
+Š
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java*) *(<
+%0java.lang.String"__id* *
+
+def.User"
+hashedPasswordé
+æ
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java* *(=
+%1boolean"9def.Password#check(Ljava/lang/String;Ljava/lang/String;)Z*"
+	!Unknown!*'
+%
+cleartextPasswordjava.lang.String*
+
+%0java.lang.String*
+3
+4*¡
+1H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java4	 4(
+"R
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java4 4(
+"":%
+cleartextPasswordjava.lang.StringB
 
 def.User

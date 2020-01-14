@@ -1,19 +1,63 @@
 
-(def.User#getUsername()Ljava/lang/String;H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaX X("1*½
+-def.User#IsValidPassword(Ljava/lang/String;)ZH
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java9 9("21*ë
+14H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaG G(”
+‘
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaG G(
+%5boolean"java.lang.Character#isDigit(C)Z*"
+	!Unknown!*
+""*
+19*ï
+16H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaD D(˜
+•
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaD D( 
+%4boolean"#java.lang.Character#isLowerCase(C)Z*"
+	!Unknown!*
+""*
+14*›
+18H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java@ @(©¦
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java@ @(
+
+%2char"java.lang.String#charAt(I)C*
+
+passwordjava.lang.String*
+""2	charAt(I)˜
+•
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaA A( 
+%3boolean"#java.lang.Character#isUpperCase(C)Z*"
+	!Unknown!*
+""*
+16*ø
+19H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java? ?(ž›
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java? ?((	
+%1int"java.lang.String#length()I*
+
+passwordjava.lang.String2length()*
+18
+1*ø
+21H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java: :(ž›
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java> >(	
+%0int"java.lang.String#length()I*
+
+passwordjava.lang.String2length()*
+19
+1*¡
 1H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaY	 Y(‡
-„
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaP Q(#"R
 H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaY	 Y(
-%0java.lang.String"__id**
-
-def.User"
-
-username"d
-H
->/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaY Y(
-
-%0java.lang.StringB
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.javaP Q(#
+"":
+passwordjava.lang.StringB
 
 def.User
