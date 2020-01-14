@@ -55,23 +55,23 @@ public class User {
 
 	// Password check
 	public boolean isValidPassword(String password) {
-		int upperCount = 0;
-		int lowerCount = 0;
-		int numCount = 0;
-		int specialCount = 0;
+		int upperCount = 0; 	//How many uppercase letters are in the password?
+		int lowerCount = 0;		//How many lowercase letters are in the password?
+		int numCount = 0;		//How many digits are in the password?
+		int specialCount = 0;	//How many special characters are in the password?
 		if (password.length() >= minPasswordLength) {
 			for (int i = 0; i < password.length(); i++) {
 				char c = password.charAt(i);
-				if (Character.isUpperCase(c)) {
+				if (Character.isUpperCase(c)) { //check for uppercase
 					upperCount++;
 				}
-				if (Character.isLowerCase(c)) {
+				if (Character.isLowerCase(c)) { //check for lowercase
 					lowerCount++;
 				}
-				if (Character.isDigit(c)) {
+				if (Character.isDigit(c)) { //check for digits
 					numCount++;
 				}
-				if (c >= 33 && c <= 46 || c == 64) {
+				if (c >= 33 && c <= 46 || c == 64) { //check for special character
 					specialCount++;
 				}
 			}

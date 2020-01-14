@@ -17,6 +17,13 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  
+  <properties>
+  <sonar.projectKey>sswgithub_lab_4</sonar.projectKey>
+  <sonar.organization>sswgithub</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  <sonar.login>7b3c2d0784e6edea9ef8e46201164080cf6a0e0e</sonar.login>
+  </properties>
 
   <dependencies>
   <dependency>
