@@ -1,0 +1,54 @@
+
+=def.User#unlock_income(Ljava/lang/String;Ljava/lang/String;)IH
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java' '("6*Ã
+3H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java, ,(
+u
+s
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java, ,(
+%2java.io.PrintStream"__id*
+""÷ô
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java, ,(F
+
+%3void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%2java.io.PrintStream*0.
+,Passwort does not match stored hash for user2println(Ljava/lang/String;)*
+1*¡
+4H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java* *("R
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java* *(
+""*Ó
+6H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java) )(Ž
+‹
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java)* )(>
+%0java.lang.String"__id*!*
+
+def.User"
+hashed_passwordê
+ç
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java) )(?
+%1boolean"9def.Password#check(Ljava/lang/String;Ljava/lang/String;)Z*"
+	!Unknown!*(
+&
+cleartext_passwordjava.lang.String*
+
+%0java.lang.String*
+3
+4*¡
+1H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java4	 4(
+"R
+H
+>/home/trane47/Repos/lab_4/password/src/main/java/def/User.java4 4(
+"":
+usernamejava.lang.String:&
+cleartext_passwordjava.lang.StringB
+
+def.User

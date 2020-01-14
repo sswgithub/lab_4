@@ -16,16 +16,9 @@
   <sonar.projectKey>sswgithub_lab_4</sonar.projectKey>
   <sonar.organization>sswgithub</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-  <sonar.login>81f476d42547da7a73087d807146721d7e66952f</sonar.login>
+  <sonar.login>fd90169836c44a5b9cc676026da4c054fea62885</sonar.login>
 </properties>
   
-  <properties>
-  <sonar.projectKey>sswgithub_lab_4</sonar.projectKey>
-  <sonar.organization>sswgithub</sonar.organization>
-  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-  <sonar.login>7b3c2d0784e6edea9ef8e46201164080cf6a0e0e</sonar.login>
-  </properties>
-
   <dependencies>
   <dependency>
     <groupId>commons-codec</groupId>
