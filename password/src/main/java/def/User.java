@@ -1,6 +1,5 @@
 package def;
 
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class User {
@@ -22,28 +21,28 @@ public class User {
 		this.income = income;
 	}
 
-	private void StorePassword(String passwordHash) {
+	private void storePassword(String passwordHash) {
 		this.hashedPassword = passwordHash;
 	}
 
-	public void GeneratePassword(String password) {
+	public void generatePassword(String password) {
 		if (IsValidPassword(password)) {
 			try {
-				this.StorePassword(Password.getSaltedHash(password));
+				this.storePassword(Password.getSaltedHash(password));
 			} catch (Exception e) {
 				log.info("there was an exception");
 			}
 		} else {
-			System.out.println("Password does not match criteria");
+			log.severe("Password does not match criteria");
 		}
 	}
 
-	int UnlockIncome(String username, String cleartextPassword) {
+	int unlockIncome(String cleartextPassword) {
 		try {
 			if (Password.check(cleartextPassword, this.hashedPassword)) {
 				return this.income;
 			} else {
-				System.out.println("Passwort does not match stored hash for user");
+				log.severe("Passwort does not match stored hash for user");
 
 			}
 		} catch (Exception e) {
@@ -77,12 +76,9 @@ public class User {
 				}
 			}
 		}
-		if (upperCount >= minUpperCase && lowerCount >= minLowerCase && numCount >= minNumbers
-				&& specialCount >= minSpecial) {
-			return true;
-		} else {
-			return false;
-		}
+
+			return (upperCount >= minUpperCase && lowerCount >= minLowerCase && numCount >= minNumbers
+				&& specialCount >= minSpecial);
 
 	}
 

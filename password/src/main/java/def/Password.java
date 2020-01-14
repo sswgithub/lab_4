@@ -11,19 +11,19 @@ public class Password {
 	  private Password() {
 		    throw new IllegalStateException("Utility class");
 		  }
-	// The higher the number of iterations the more
+	// The higher the number of ITERATIONS the more
 	// expensive computing the hash is for us and
 	// also for an attacker.
-	private static final int iterations = 20 * 1000;
-	private static final int saltLen = 32;
-	private static final int desiredKeyLen = 256;
+	private static final int ITERATIONS = 20 * 1000;
+	private static final int SALTLEN = 32;
+	private static final int DESIREDKEYLEN = 256;
 
 	/**
 	 * Computes a salted PBKDF2 hash of given plaintext password suitable for
 	 * storing in a database. Empty passwords are not supported.
 	 */
 	public static String getSaltedHash(String password) throws Exception {
-		byte[] salt = SecureRandom.getInstance("SHA1PRNG").generateSeed(saltLen);
+		byte[] salt = SecureRandom.getInstance("SHA1PRNG").generateSeed(SALTLEN);
 		// store the salt with the password
 		return Base64.encodeBase64String(salt) + "$" + hash(password, salt);
 	}
@@ -47,7 +47,7 @@ public class Password {
 		if (password == null || password.length() == 0)
 			throw new IllegalArgumentException("Empty passwords are not supported.");
 		SecretKeyFactory f = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
-		SecretKey key = f.generateSecret(new PBEKeySpec(password.toCharArray(), salt, iterations, desiredKeyLen));
+		SecretKey key = f.generateSecret(new PBEKeySpec(password.toCharArray(), salt, ITERATIONS, DESIREDKEYLEN));
 		return Base64.encodeBase64String(key.getEncoded());
 	}
 }
